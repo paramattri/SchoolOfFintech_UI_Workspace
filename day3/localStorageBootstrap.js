@@ -68,16 +68,16 @@ document.getElementById("submit").addEventListener('click', (e) => {
     location.reload()
 })
 
-// document.getElementById('cards-data').addEventListener('click', (e) => {
-//     //console.log(e.target.parentElement.children[1].textContent)
-//     const idValue = e.target.parentElement.children[1].textContent.split(" ")[1]
-//     //console.log(idValue)
-//     let courses = LocalStore.getCourses()
-//     for(let i = 0; i < courses.length; i++){
-//         if(courses[i].courseId == idValue){
-//             courses.splice(i, 1)
-//             location.reload()
-//         }
-//     }
-//     localStorage.setItem('courses', JSON.stringify(courses))
-// })
+document.getElementById('cards-data').addEventListener('click', (e) => {
+    //console.log(e.target.parentElement.children[1].textContent)
+    const idValue = e.target.parentElement.children[1].textContent.split(" ")[1]
+    //console.log(idValue)
+    let courses = LocalStore.getCourses()
+    for(let i = 0; i < courses.length; i++){
+        if(courses[i].courseId == idValue){
+            courses.splice(i, 1)
+            location.reload()
+        }
+    }
+    localStorage.setItem('courses', JSON.stringify(courses))
+})
