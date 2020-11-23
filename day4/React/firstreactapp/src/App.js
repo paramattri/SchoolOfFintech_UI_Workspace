@@ -1,6 +1,8 @@
 import './App.css';
 import React, { Component } from 'react'
 import Courses from './Courses';
+import Student from './Student';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 class App extends Component {
  
@@ -15,6 +17,12 @@ class App extends Component {
         {/* <div className="row">
           <Teacher/>
         </div> */}
+        {/* <Router>
+
+        <Route path='/' component={}></Route>
+        <Student/>
+
+        </Router> */}
       </div>
     </div>
   );
