@@ -1,7 +1,6 @@
 import './App.css';
 import React, { Component } from 'react'
-import Course from './courses';
-import Teacher from './teacher';
+import Courses from './Courses';
 
 class App extends Component {
  
@@ -9,15 +8,13 @@ class App extends Component {
 
   return (
     <div className="App">
-      <h1 className="display-4">Welcome to React</h1>
+      <h1 className="display-4">Course List</h1>
       <br></br>
       <div className="container">
-        <div className="row">
-          <Course message="Welcome"/>
-        </div>
-        <div className="row">
+          <Courses message="Welcome"/>
+        {/* <div className="row">
           <Teacher/>
-        </div>
+        </div> */}
       </div>
     </div>
   );
